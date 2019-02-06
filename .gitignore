@@ -1,1 +1,1 @@
-host.d/*.host.conf
+hosts.d/*.host.conf
