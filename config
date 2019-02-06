@@ -1,12 +1,12 @@
 # Mike Carifio <mike@carif.io>
 
-# installation: ~/.ssh/config.d/sshenv/bin/ln.sh
+# installation: ~/.ssh/config.d/sshit/bin/ln.sh
 # or manually:
-# ln -s ${HOME}/.ssh/config.d/sshenv/rc ~/.ssh/rc
-# ln -s ${HOME}/.ssh/config.d/sshenv/environment ~/.ssh/environment
+# ln -s ${HOME}/.ssh/config.d/sshit/rc ~/.ssh/rc
+# ln -s ${HOME}/.ssh/config.d/sshit/environment ~/.ssh/environment
 
-Include config.d/sshenv/ssh-defaults.conf
-Include config.d/sshenv/ssh-hosts.conf
+Include config.d/sshit/ssh-defaults.conf
+Include config.d/sshit/ssh-hosts.conf
 # or directly
-# Include config.d/sshenv/hosts.d/*.host.conf
+# Include config.d/sshit/hosts.d/*.host.conf
 

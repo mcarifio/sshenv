@@ -11,9 +11,9 @@ Ssh "per-user" client configuration is rooted in `/.ssh`. So I use this layout:
 .ssh
 ├── attic/ # personal convention, move stuff out of the way
 ├── authorized_keys  # passwordless ssh, controlled by ssh
-├── config # copy or symbolic link of ~/.ssh/config.d/sshenv/config
+├── config # copy or symbolic link of ~/.ssh/config.d/sshit/config
 ├── config.d
-│   └── sshenv
+│   └── sshit
 │       ├── bin
 │       │   ├── mkhost.sh
 │       ├── environment
@@ -32,20 +32,20 @@ Ssh "per-user" client configuration is rooted in `/.ssh`. So I use this layout:
 ├── tmp/ # personal convention for sessions
 ```
 
-Using the debian/ubuntu convention, additional configuration directories are `${something}.d`, e.g. `keys.d` or `config.d`. The hierarchy is `config.d/sshenv/hosts.d/*.host.conf`. All known hosts are included.
+Using the debian/ubuntu convention, additional configuration directories are `${something}.d`, e.g. `keys.d` or `config.d`. The hierarchy is `config.d/sshit/hosts.d/*.host.conf`. All known hosts are included.
 Configuration that isn't host specific ends with `.ssh.conf`.
 
 # Installation
 
-Fork [sshenv](https://www.github.com/mcarifio/sshenv) using (say) [hub](https://hub.github.com/hub.1.html) and run `bin/hookup.sh` (to be supplied):
+Fork [sshit](https://www.github.com/mcarifio/sshit) using (say) [hub](https://hub.github.com/hub.1.html) and run `bin/hookup.sh` (to be supplied):
 
 ```bash
 user=$(git config --get github.user)  ## or your github username
 echo ${user}  ## should be something
 mkdir -p ~/.ssh/config.d; cd $_
-git clone https://www.github.com/mcarifio/sshenv ; cd sshenv
+git clone https://www.github.com/mcarifio/sshit ; cd sshit
 hub fork
-git remote add -f ${user} git@github.com:${user}/sshenv.git
+git remote add -f ${user} git@github.com:${user}/sshit.git
 git remote -v ## show at least two remotes, ${user} and origin
 bin/hookup.sh  ## make symbolic links up to ~/.ssh/{config,rc,environment}
 
