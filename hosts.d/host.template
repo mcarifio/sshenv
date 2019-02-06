@@ -1,5 +1,0 @@
-# cp host.template your-host.host.conf and edit it
-Host your-host-here
-  # User root
-  # HostName 104.236.99.3
-  # IdentityFile keys.d/your-private-key_rsa

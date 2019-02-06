@@ -1,1 +1,13 @@
+# ignore your specific host files
 hosts.d/*.host.conf
+
+# ignore emacs working files
+*~
+\#*\#
+
+
+# ignore compressed files
+*.gz
+*.tgz
+*.tar
+*.xz
