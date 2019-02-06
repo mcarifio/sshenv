@@ -1,0 +1,5 @@
+# usage: ln -s /path/to/this/rc ~/.ssh/rc
+# or $(git root)/bin/configure.sh
+
+echo ${BASH_SOURCE} run for "'${SSH_ORIGINAL_COMMAND}' on ${HOSTNAME}"
+

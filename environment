@@ -1,0 +1,2 @@
+# Assume this evaluated on host first
+SSHENV=${HOSTNAME}:/${USER}/.ssh/config.d/sshenv
