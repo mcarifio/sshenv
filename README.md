@@ -60,3 +60,11 @@ ssh localhost  ## works?
 You should install [mosh]() and [autossh](). They both deal with ssh timeouts (but in different ways).
 
 
+# References
+
+Unfortunately there's a lot of confusing information about ssh, ssh_config, sshd_config, ssh port forwarding with/without X11 and multihop ssh sessions using `ProxyCommand`. Here's some information I found current and useful. Of course it will become quickly dated itself, sigh.
+
+* [canonicalization of names](https://dotfiles.tnetconsulting.net/articles/2016/0109/ssh-canonicalization.html)
+* [ssh keys](https://dotfiles.tnetconsulting.net/articles/2015/0506/empowering-openssh.html)
+
+
